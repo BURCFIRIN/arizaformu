@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ArÄ±za Bildirim ve Takip Formu</title>
+  <title>Arýza Bildirim ve Takip Formu</title>
   <style>
     body{font-family:Arial, sans-serif;background:#f7fafc;padding:24px}
     .container{max-width:800px;margin:0 auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
@@ -17,10 +17,10 @@
 </head>
 <body>
   <div class="container">
-    <h1>ARIZA BÄ°LDÄ°RÄ°M VE TAKÄ°P FORMU</h1>
-    <form action="https://formspree.io/f/mwprpzed" method="POST">
-      <!-- Buradaki xyzabcd kÄ±smÄ±nÄ± Formspree hesabÄ±ndan aldÄ±ÄŸÄ±n endpoint ile deÄŸiÅŸtir -->
-
+    <h1>ARIZA BÝLDÝRÝM VE TAKÝP FORMU</h1>
+    <form action="https://submit-form.com/AF31dufpw" method="POST" enctype="multipart/form-data">
+      <!-- Buradaki XXXXXX kýsmýný Formspark form endpoint URL'iniz ile deðiþtirin -->
+      
       <label>Bildirimi Yapan</label>
       <input type="text" name="reporter" required>
 
@@ -33,51 +33,51 @@
       <label>Bildirim Saati</label>
       <input type="time" name="reportTime">
 
-      <label>ArÄ±za Konusu</label>
+      <label>Arýza Konusu</label>
       <input type="text" name="title">
 
-      <label>ArÄ±za AÃ§Ä±klamasÄ±</label>
+      <label>Arýza Açýklamasý</label>
       <textarea name="description"></textarea>
 
       <label>Lokasyon / Alan</label>
       <input type="text" name="location">
 
-      <label>Cihaz / Ekipman AdÄ±</label>
+      <label>Cihaz / Ekipman Adý</label>
       <input type="text" name="deviceName">
 
       <label>Seri No / Envanter No</label>
       <input type="text" name="serial">
 
-      <label>Ã–ncelik Durumu</label>
+      <label>Öncelik Durumu</label>
       <select name="priority">
         <option value="Acil">Acil</option>
         <option value="Normal">Normal</option>
-        <option value="DÃ¼ÅŸÃ¼k">DÃ¼ÅŸÃ¼k</option>
+        <option value="Düþük">Düþük</option>
       </select>
 
-      <label>ArÄ±zayÄ± Tespit Eden</label>
+      <label>Arýzayý Tespit Eden</label>
       <input type="text" name="finder">
 
-      <label>MÃ¼dahale Eden KiÅŸi(ler)</label>
+      <label>Müdahale Eden Kiþi(ler)</label>
       <input type="text" name="technician">
 
-      <label>MÃ¼dahale Tarihi</label>
+      <label>Müdahale Tarihi</label>
       <input type="date" name="interventionDate">
 
-      <label>Ã‡Ã¶zÃ¼m Tarihi</label>
+      <label>Çözüm Tarihi</label>
       <input type="date" name="resolutionDate">
 
-      <label>YapÄ±lan Ä°ÅŸlem</label>
+      <label>Yapýlan Ýþlem</label>
       <textarea name="actions"></textarea>
 
-      <label>KullanÄ±lan Yedek ParÃ§a / Malzeme</label>
+      <label>Kullanýlan Yedek Parça / Malzeme</label>
       <input type="text" name="parts">
 
       <label>Durum</label>
       <select name="status">
-        <option value="Ã‡Ã¶zÃ¼ldÃ¼">Ã‡Ã¶zÃ¼ldÃ¼</option>
-        <option value="KÄ±smi Ã‡Ã¶zÃ¼ldÃ¼">KÄ±smi Ã‡Ã¶zÃ¼ldÃ¼</option>
-        <option value="Ã‡Ã¶zÃ¼lmedi">Ã‡Ã¶zÃ¼lmedi</option>
+        <option value="Çözüldü">Çözüldü</option>
+        <option value="Kýsmi Çözüldü">Kýsmi Çözüldü</option>
+        <option value="Çözülmedi">Çözülmedi</option>
       </select>
 
       <label>Tekrar Kontrol Tarihi (varsa)</label>
@@ -86,7 +86,10 @@
       <label>Onaylayan / Sorumlu</label>
       <input type="text" name="approver">
 
-      <button type="submit">GÃ¶nder</button>
+      <label>Dosya / Fotoðraf Yükleme</label>
+      <input type="file" name="attachments" multiple>
+
+      <button type="submit">Gönder</button>
     </form>
   </div>
 </body>
